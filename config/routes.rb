@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   resources :feeds
 
   namespace :admin do
+    root 'feeds#index'
     resources :feeds
   end
 end
