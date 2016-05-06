@@ -11,5 +11,9 @@ module Feedzilla
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
+    config.time_zone = 'Europe/Moscow'
+    config.i18n.default_locale = :ru
+    # Let the rails-i18n gem load only russian locale
+    config.i18n.available_locales = :ru
   end
 end
