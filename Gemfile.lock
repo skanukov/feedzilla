@@ -50,6 +50,7 @@ GEM
       railties (>= 4.1.0, < 5.1)
       responders
       warden (~> 1.2.3)
+    devise-i18n (1.0.1)
     erubis (2.7.0)
     execjs (2.6.0)
     ffi (1.9.10)
@@ -167,6 +168,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   devise (~> 4.1)
+  devise-i18n (~> 1.0)
   jbuilder (~> 2.0)
   jquery-rails
   listen (~> 3.0.5)
