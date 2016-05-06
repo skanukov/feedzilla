@@ -48,4 +48,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Custom gems
+gem 'devise', '~> 4.1'
 gem 'rails-i18n', '~> 5.0.0.beta3'
