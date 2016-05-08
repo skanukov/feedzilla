@@ -1,17 +1,25 @@
-<p>
-  <strong>Title:</strong>
-  <%= @feed.title %>
-</p>
+<div class="container container-content">
+  <div class="row">
+    <div class="col-xs-12">
+      <p>
+        <strong>Title:</strong>
+        <%= @feed.title %>
+      </p>
 
-<p>
-  <strong>Link:</strong>
-  <%= @feed.link %>
-</p>
+      <p>
+        <strong>Link:</strong>
+        <%= @feed.link %>
+      </p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @feed.description %>
-</p>
+      <p>
+        <strong>Description:</strong>
+        <%= @feed.description %>
+      </p>
 
-<%= link_to 'Edit', edit_admin_feed_path(@feed) %> |
-<%= link_to 'Back', admin_feeds_path %>
+      <div class="form-footer-links">
+        <%= link_to 'Редактировать', edit_admin_feed_path(@feed) %> |
+        <%= link_to 'Назад', admin_feeds_path %>
+      </div>
+    </div>
+  </div>
+</div>

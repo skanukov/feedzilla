@@ -1,5 +1,13 @@
-<h1>New Feed</h1>
+<div class="container container-content">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>Новая Лента</h1>
 
-<%= render 'form', feed: @feed %>
+      <%= render 'form', feed: @feed %>
 
-<%= link_to 'Back', admin_feeds_path %>
+      <div class="form-footer-links">
+        <%= link_to 'Назад', admin_feeds_path %>
+      </div>
+    </div>
+  </div>
+</div>

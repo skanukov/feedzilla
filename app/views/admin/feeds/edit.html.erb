@@ -1,6 +1,14 @@
-<h1>Editing Feed</h1>
+<div class="container container-content">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>Редактирование Ленты</h1>
 
-<%= render 'form', feed: @feed %>
+      <%= render 'form', feed: @feed %>
 
-<%= link_to 'Show', admin_feed_path(@feed) %> |
-<%= link_to 'Back', admin_feeds_path %>
+      <div class="form-footer-links">
+        <%= link_to 'Показать', admin_feed_path(@feed) %> |
+        <%= link_to 'Назад', admin_feeds_path %>
+      </div>
+    </div>
+  </div>
+</div>
