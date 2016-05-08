@@ -1,5 +1,14 @@
 # Russian locale
 
 ru:
+  activerecord:
+    models:
+      feed: 'Лента'
+    attributes:
+      feed:
+        title: 'Название'
+        link: 'Адрес'
+        description: 'Описание'
+
   authorization:
     unauthorized_access: 'Доступ запрещен'
