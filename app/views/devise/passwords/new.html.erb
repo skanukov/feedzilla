@@ -1,7 +1,7 @@
-<div class="container container-signin">
+<div class="container container-content">
   <div class="row">
     <div class="col-xs-12 col-md-offset-3 col-md-6">
-      <h2 class="header-signin">Забыли пароль?</h2>
+      <h2>Забыли пароль?</h2>
 
       <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
         <%= devise_error_messages! %>
