@@ -1,0 +1,20 @@
+<div class="container container-signin">
+  <div class="row">
+    <div class="col-xs-12 col-md-offset-3 col-md-6">
+      <h2 class="header-signin">Забыли пароль?</h2>
+
+      <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+        <%= devise_error_messages! %>
+
+        <fieldset class="form-group">
+          <%= f.label :email %>
+          <%= f.email_field :email, autofocus: true, class: 'form-control' %>
+        </fieldset>
+
+        <%= f.submit 'Прислать мне инструкцию по восстановлению', class: 'btn btn-primary' %>
+      <% end %>
+
+      <%= render "devise/shared/links" %>
+    </div>
+  </div>
+</div>

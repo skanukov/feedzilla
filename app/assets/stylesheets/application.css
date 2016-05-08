@@ -12,5 +12,6 @@
  *
  *= require bootstrap-variables
  *= require bootstrap-custom
+ *= require admin
  *= require_self
  */
