@@ -3,7 +3,7 @@
     <div class="col-xs-12">
       <p>
         <strong>Лента:</strong>
-        <%= @entry.feed %>
+        <%= @entry.feed.title %>
       </p>
 
       <p>
@@ -27,8 +27,8 @@
       </p>
 
       <div class="form-footer-links">
-        <%= link_to 'Edit', edit_admin_entry_path(@entry) %> |
-        <%= link_to 'Back', admin_entries_path %>
+        <%= link_to 'Редактировать', edit_admin_entry_path(@entry) %> |
+        <%= link_to 'Назад', admin_entries_path %>
       </div>
     </div>
   </div>

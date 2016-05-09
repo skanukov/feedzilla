@@ -4,11 +4,18 @@ ru:
   activerecord:
     models:
       feed: 'Лента'
+      entry: 'Новость'
     attributes:
       feed:
         title: 'Название'
         link: 'Адрес'
         description: 'Описание'
+      entry:
+        feed_id: 'Лента'
+        title: 'Заголовок'
+        link: 'Адрес'
+        content: 'Текст'
+        published_at: 'Опубликовано'
 
   authorization:
     unauthorized_access: 'Доступ запрещен'

@@ -17,7 +17,7 @@
         <tbody>
           <% @entries.each do |entry| %>
             <tr>
-              <td><%= entry.feed %></td>
+              <td><%= entry.feed.title %></td>
               <td><%= entry.title %></td>
               <td><%= entry.link %></td>
               <td><%= entry.content %></td>
