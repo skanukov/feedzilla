@@ -13,7 +13,7 @@
 
   <fieldset class="form-group">
     <%= f.label :feed_id %>
-    <%= f.text_field :feed_id, class: 'form-control' %>
+    <%= f.collection_select :feed_id, Feed.all, :id, :title, {}, { class: 'form-control' } %>
   </fieldset>
 
   <fieldset class="form-group">
