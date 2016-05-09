@@ -1,0 +1,36 @@
+<div class="container container-content">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>Новости</h1>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Лента</th>
+            <th>Заголовок</th>
+            <th>Адрес</th>
+            <th>Текст</th>
+            <th>Опубликовано</th>
+            <th colspan="3"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @entries.each do |entry| %>
+            <tr>
+              <td><%= entry.feed %></td>
+              <td><%= entry.title %></td>
+              <td><%= entry.link %></td>
+              <td><%= entry.content %></td>
+              <td><%= entry.published_at %></td>
+              <td><%= link_to 'Показать', admin_entry_path(entry) %></td>
+              <td><%= link_to 'Редактировать', edit_admin_entry_path(entry) %></td>
+              <td><%= link_to 'Удалить', admin_entry_path(entry), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+
+      <%= link_to 'Новая Новость', new_admin_entry_path %>
+    </div>
+  </div>
+</div>

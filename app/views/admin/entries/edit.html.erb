@@ -1,0 +1,14 @@
+<div class="container container-content">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>Редактирование Новости</h1>
+
+      <%= render 'form', entry: @entry %>
+
+      <div class="form-footer-links">
+        <%= link_to 'Показать', admin_entry_path(@entry) %> |
+        <%= link_to 'Назад', admin_entries_path %>
+      </div>
+    </div>
+  </div>
+</div>

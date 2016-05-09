@@ -8,5 +8,6 @@ Rails.application.routes.draw do
   namespace :admin do
     root 'feeds#index'
     resources :feeds
+    resources :entries
   end
 end
