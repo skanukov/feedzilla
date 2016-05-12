@@ -3,6 +3,8 @@
     <div class="col-xs-12">
       <h1>Новости</h1>
 
+      <%= will_paginate @entries %>
+
       <table class="table">
         <thead>
           <tr>
@@ -27,6 +29,8 @@
           <% end %>
         </tbody>
       </table>
+
+      <%= will_paginate @entries %>
 
       <%= link_to 'Новая Новость', new_admin_entry_path %>
     </div>

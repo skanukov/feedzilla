@@ -4,7 +4,7 @@ class Admin::EntriesController < Admin::ApplicationController
   # GET /entries
   # GET /entries.json
   def index
-    @entries = Entry.includes(:feed).all
+    @entries = Entry.includes(:feed).paginate(page: params[:page], per_page: 10)
   end
 
   # GET /entries/1
