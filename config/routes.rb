@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root 'entries#index'
 
   devise_for :users
-  resources :entries
+  resources :entries, only: [:index, :show]
 
   namespace :admin do
     root 'feeds#index'
