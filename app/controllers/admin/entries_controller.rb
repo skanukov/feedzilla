@@ -5,6 +5,7 @@ class Admin::EntriesController < Admin::ApplicationController
   # GET /entries.json
   def index
     @entries = Entry.includes(:feed).paginate(page: params[:page], per_page: 10)
+                    .order(published_at: :desc)
   end
 
   # GET /entries/1
